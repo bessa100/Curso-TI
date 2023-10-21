@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            text-align: justify;
+        }
+    
+        .container {
+            max-width: 1100px; /* Define a largura máxima da caixa de texto */
+            margin: 0 auto; /* Centraliza a caixa de texto na página */
+            padding: 20px; /* Adiciona algum espaçamento ao redor do texto */
+            border: 2px solid #fff; /* Adiciona uma borda à caixa de texto */
+            background-color: #fff; /* Define a cor de fundo da caixa de texto */
+        }
+    
+        header {
+            background-image: url('static/images/ar.jpg');
+            background-size: cover;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px;
+        }
+    
+        header h1 {
+            font-size: 60px;
+    
+        }
+        nav {
+            background-color: #555;
+            color: #ffffff;
+            padding: 10px;
+            text-align: justify;
+        }
+    
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            text-align: justify;
+        }
+    
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+            text-align: justify;
+        }
+    
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            text-align: justify;
+        }
+    
+        main {
+            padding: 20px;
+            text-align: justify;
+        }
+    
+        section {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+    
+        img {
+            max-width: 100%; /* A imagem terá no máximo a largura do seu contêiner */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+    
+        footer {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: justify;
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: center; /* Isso coloca os botões nas extremidades da div */
+            margin-top: 20px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px 30px;
+        }
+        
+    </style>
+    </head>
+    <body>
+    <header>
+        <h1>Sobre o Arduíno</h1>
+    </header>
+    <div class="container">
+    
+    <main>   
+        <div class="container">
+            <div class="button-container">
+
+    
+            <main>   
+                <section>
+                <button onclick="irParaIndex()">Página inicial</button>
+                <button onclick="irParaMediapipe()">MediaPipe</button>
+                <button onclick="irParaMao()">Mão</button>
+                </section>
+            </main>
+        </div>
+    </div>
+        <script>
+            function irParaIndex() {
+                window.location.href = 'index.html';
+            }
+        
+            function irParaMediapipe() {
+                window.location.href = 'mediapipe.html';
+            }
+        
+            function irParaMao() {
+                window.location.href = 'mao.html';
+            }
+        
+        </script>
+        <section>
+            <h2>O QUE É?</h2>
+            <p>O Arduino é uma plataforma de prototipagem eletrônica de código aberto que permite a criação de projetos e dispositivos eletrônicos interativos. Foi criado para tornar a eletrônica mais acessível a pessoas com pouca ou nenhuma experiência em programação ou eletrônica, permitindo que entusiastas, estudantes e makers criem uma variedade de projetos personalizados.
+                </p>
+        </section>
+    
+        <section>
+            <h2>As principais características do Arduino incluem:</h2>
+            <p>Hardware: O Arduino é baseado em uma placa de circuito impresso (PCB) que contém um microcontrolador, interfaces de entrada/saída e conexões para sensores, atuadores e outros componentes eletrônicos.</p>
+
+            <p>Software: Para programar o Arduino, você utiliza a linguagem de programação baseada em C/C++, com uma biblioteca específica que facilita o acesso aos recursos de hardware. Você escreve seu código em um ambiente de desenvolvimento integrado (IDE) fornecido pela Arduino.</p>
+                
+            <p>Comunidade e Documentação: O Arduino tem uma comunidade global ativa de usuários e desenvolvedores que compartilham projetos, tutoriais e conhecimento online. Isso facilita muito o aprendizado e a resolução de problemas.</p>
+                
+            <p>Versatilidade: O Arduino pode ser usado em uma ampla variedade de aplicações, desde projetos simples, como piscar LEDs, até sistemas mais complexos, como controle de robôs, automação residencial, medição de sensores, arte interativa e muito mais.</p>
+                
+            <p>Acessibilidade: As placas Arduino são relativamente baratas, e existem versões diferentes para atender a diversas necessidades e níveis de complexidade.</p>
+                
+            <p>Expansibilidade: É possível estender as capacidades do Arduino conectando módulos e sensores adicionais, como GPS, WiFi, Bluetooth, display LCD, sensores de temperatura, entre outros.</p>
+            </p>
+        </section>
+    
+        <section>
+            <h2>Para que serve um arduino?</h2>
+            <p>O Arduino é uma plataforma de computação física embarcada, ou seja, um mini computador dedicado e independente, programado para realizar determinadas funções. Por conta disso, qualquer pessoa pode desenvolver diferentes projetos com Arduino, como:
+                
+                <p> - Óculos anti-sono;</p>
+                <p> - Mão animatrônica;</p>
+                <p> - Controle remoto;</p>
+                <p> - Termômetro;</p>
+                <p> - Robô desenhista.</p>
+                <p> - Através desta placa, também é possível automatizar a casa, criando fechaduras eletrônicas, luzes sensíveis ao som e sistema de alarme.Tudo isso, apenas utilizando os sensores e componentes do Arduino – além de, é claro, a criatividade.</p>
+            </p>
+        </section>
+    
+
+    
+        <section>
+            <h2>EXEMPLOS</h2>
+            <p> O exemplo abaixo, é de um cógido que utiliza um comando, para enviar informações de um arduino para o outro e assim acender os leds.</p>
+
+            <section>
+                <img src="static\images/ex.jpg" alt="Descrição da Imagem Local">
+            </section>
+
+            <section>
+                <img src="static\images/exe.jpg" alt="Descrição da Imagem Local">
+
+            </section>
+            <p> Através desse código, conseguimos fazer que os arduinos se comunique da mesma forma do vídeo:</p>
+            
+            <video controls>
+                <source src="static\images/video.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+ 
+    </main>
+    </div>
+    <!-- Conteúdo da página Arduino -->
+</body>
+</html>

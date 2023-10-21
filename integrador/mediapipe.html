@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaPipe</title>
+</head>
+<title>Como o MedidaPipe detecta objetos em imagens e vídeos</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        text-align: justify;
+    }
+
+    .container {
+        max-width: 1100px; /* Define a largura máxima da caixa de texto */
+        margin: 0 auto; /* Centraliza a caixa de texto na página */
+        padding: 20px; /* Adiciona algum espaçamento ao redor do texto */
+        border: 2px solid #fff; /* Adiciona uma borda à caixa de texto */
+        background-color: #fff; /* Define a cor de fundo da caixa de texto */
+    }
+
+    header {
+        background-image: url('static/images/neural.jpg');
+        background-size: cover;
+        color: #ffffff;
+        text-align: center;
+        padding: 50px;
+    }
+
+    header h1 {
+        font-size: 60px;
+
+    }
+    nav {
+        background-color: #555;
+        color: #ffffff;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        text-align: justify;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+        text-align: justify;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        text-align: justify;
+    }
+
+    main {
+        padding: 20px;
+        text-align: justify;
+    }
+
+    section {
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    img {
+        max-width: 100%; /* A imagem terá no máximo a largura do seu contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    footer {
+        background-color: #333;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center; /* Isso coloca os botões nas extremidades da div */
+        margin-top: 20px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>COMO O MEDIAPIPE DETECTA OBJETOS EM IMAGENS E VÍDEOS</h1>
+</header>
+<div class="container">
+
+<main>   
+    <div class="container">
+        <div class="button-container">
+        <main>   
+            <section>
+                <button onclick="irParaIndex()">Página inicial</button>
+                <button onclick="irParaArduino()">Arduino</button>
+                <button onclick="irParaMao()">Mão</button>
+            </section>
+        </main>
+    </div>
+    </div>
+    
+    <script>
+        function irParaIndex() {
+            window.location.href = 'index.html';
+        }
+    
+        function irParaArduino() {
+            window.location.href = 'arduino.html';
+        }
+    
+        function irParaMao() {
+            window.location.href = 'mao.html';
+        }
+    
+    </script>
+    <section>
+        <h2>O QUE É?</h2>
+        <p>A detecção de objetos é uma tarefa de visão computacional que envolve identificar e delimitar a localização de objetos específicos em imagens ou vídeos. 
+            O MediaPipe é uma biblioteca desenvolvida pelo Google que oferece soluções para diversas tarefas de visão computacional, incluindo a detecção de objetos.
+            </p>
+    </section>
+
+    <section>
+        <h2>COLETA DE DADOS</h2>
+        <p>O MediaPipe é treinado em um grande conjunto de dados que contém imagens rotuladas com objetos de interesse. Por exemplo, se você deseja detectar carros em uma estrada, o conjunto de dados conteria imagens de estradas com carros e anotações que indicam onde os carros estão localizados.
+        </p>
+    </section>
+
+    <section>
+        <h2>TREINAMENTO DA REDE NEURAL</h2>
+        <p>O MediaPipe treina uma rede neural convolucional usando esses dados. Durante o treinamento, a rede neural aprende padrões e características que são úteis para identificar os objetos de interesse.
+
+        </p>
+    </section>
+
+    <section>
+        <h2>DETECÇÃO EM TEMPO REAL</h2>
+        <p>Uma vez que a rede neural esteja treinada, ela pode ser usada para realizar a detecção de objetos em tempo real em imagens ou vídeos. Aqui estão os passos gerais desse processo: 
+        <P> - Pré-processamento: A imagem ou o frame de vídeo é pré-processado para se adequar ao formato esperado pela rede neural. Isso pode envolver a normalização das cores, redimensionamento da imagem, entre outros ajustes. Right-click and choose “Copy”.</P>
+        <P> - Passagem pela Rede Neural: A imagem pré-processada é passada pela rede neural. A rede neural gera saídas que indicam a probabilidade da presença de objetos em várias regiões da imagem.Right-click and choose “Paste”.</P>
+        <P> - Pós-processamento: As saídas da rede neural são processadas para identificar as localizações e as classes dos objetos detectados. Isso geralmente envolve a aplicação de um limiar para determinar quais detecções são válidas e a utilização de algoritmos para agrupar detecções próximas e remover duplicatas.
+        <P> - Visualização: As detecções são frequentemente visualizadas na imagem ou no vídeo, geralmente com caixas delimitadoras ao redor dos objetos detectados e rótulos que indicam a classe dos objetos.</P>
+        </p>
+    </section>
+
+    <section>
+        <h2>EXEMPLOS</h2>
+        <section>
+            <img src="static\images/ima.jpg" alt="Descrição da Imagem Local">
+        </section>
+
+        <h2> Utilizando um código semelhante ao referente, poderá detectar alguns objetos, como nas imagens abaixo:</h2>
+        <section>
+            <img src="static\images/imag.jpg" alt="Descrição da Imagem Local">
+        </section>
+
+        <section>
+            <img src="static\images/image.jpg" alt="Descrição da Imagem Local">
+        </section>
+    </section>
+</main>
+</div>
+</body>
+</html>

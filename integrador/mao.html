@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaPipe</title>
+</head>
+<title>Como o MedidaPipe detecta objetos em imagens e vídeos</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        text-align: justify;
+    }
+
+    .container {
+        max-width: 1100px; /* Define a largura máxima da caixa de texto */
+        margin: 0 auto; /* Centraliza a caixa de texto na página */
+        padding: 20px; /* Adiciona algum espaçamento ao redor do texto */
+        border: 2px solid #fff; /* Adiciona uma borda à caixa de texto */
+        background-color: #fff; /* Define a cor de fundo da caixa de texto */
+    }
+
+    header {
+        background-image: url('static/images/neural.jpg');
+        background-size: cover;
+        color: #ffffff;
+        text-align: center;
+        padding: 50px;
+    }
+
+    header h1 {
+        font-size: 60px;
+
+    }
+    nav {
+        background-color: #555;
+        color: #ffffff;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        text-align: justify;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+        text-align: justify;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        text-align: justify;
+    }
+
+    main {
+        padding: 20px;
+        text-align: justify;
+    }
+
+    section {
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    img {
+        max-width: 100%; /* A imagem terá no máximo a largura do seu contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    footer {
+        background-color: #333;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center; /* Isso coloca os botões nas extremidades da div */
+        margin-top: 20px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Mão Robótica</h1>
+</header>
+<div class="container">
+
+<main>   
+    <div class="container">
+        <div class="button-container">
+        <main>   
+            <section>
+                <button onclick="irParaIndex()">Página inicial</button>
+                <button onclick="irParaArduino()">Arduino</button>
+                <button onclick="irParaMao()">Mão</button>
+            </section>
+        </main>
+    </div>
+    </div>
+    
+    <script>
+        function irParaIndex() {
+            window.location.href = 'index.html';
+        }
+    
+        function irParaArduino() {
+            window.location.href = 'arduino.html';
+        }
+    
+        function irParaMao() {
+            window.location.href = 'mao.html';
+        }
+    
+    </script>
+    <section>
+        <h2>O QUE É?</h2>
+        <p>A mão robótica consegue girar suavemente uma grande variedade de objetos, desde pequenos brinquedos, latas e até frutas e vegetais, sem machucá-los ou esmagá-los. Para isso, foram usados 16 sensores de toque na palma e nos dedos da mão robótica, que tem apenas quatro dedos. </p>
+    </section>
+
+    <section>
+        <h2>COMO FUNCIONA UMA MÃO ROBÓTICA?</h2>
+        <p>O robô foi projetado para imitar a aparência de uma mão humana e apresenta habilidades para manusear diferentes objetos graças aos sensores localizados nas pontas dos dedos. Assim, a mão robótica é capaz de segurar um ovo sem quebrá-lo, utilizar pinças para pegar um chip de computador e ainda amassar uma lata de metal.</p>
+    </section>
+
+    <section>
+        <h2>6 PEÇAS ESSENCIAIS PARA FAZER UM PROJETO DE ROBÓTICA</h2>
+        <p>Quando pensamos em robótica, é comum que as primeiras imagens que nos venham à cabeça sejam daqueles robôs enormes e cheios de funções, não é mesmo? Mas você sabia que é possível comprar diversas peças para que você mesmo possa começar um projeto de robótica? Neste texto, vamos te mostrar algumas delas. Confira!</p>
+        <p>- Plataformas;</p>
+        <P>- Conectores;</p>
+        <p>- Engrenagem;</p>
+        <P>- Circuito Buzzer;</P>
+        <p>- Parafusos e porças;</p>
+        <P>- Outras peças.</P>
+        <p>Existem outros componentes importantes para a montagem de um robô, porém podem ser específicos para o tipo de equipamento que você deseja criar. Se o seu plano é fazer um pequeno carro, por exemplo, será importante comprar rodas e motor; já se deseja fabricar um avião, será necessário comprar as hélices e as turbinas.</p>
+        <p>Como você pôde notar, algumas peças são essenciais para a elaboração do seu projeto de robótica, portanto é preciso se planejar bem para não deixar faltar nenhum componente.</P>
+    </section>
+
+    <section>
+        <h2>DESENVOLVIMENTO DA MÃO</h2>
+        <section>
+            <img src="static\images/r.jpg" alt="Descrição da Imagem Local">
+        </section>
+
+        <section>
+            <img src="static\images/m.jpg" alt="Descrição da Imagem Local">
+        </section>
+
+        <section>
+            <img src="static\images/a.jpg" alt="Descrição da Imagem Local">
+        </section>
+
+        <section>
+            <img src="static\images/o.jpg" alt="Descrição da Imagem Local">
+        </section>
+
+        <video controls>
+            <source src="static\images/a.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+        <h2>MÃO ROBÓTICA FINALIZADA</h2>
+
+        <section>
+            <img src="static\images/montada.jpg" alt="Descrição da Imagem Local">
+        </section>
+
+        <video controls>
+            <source src="static\images/c.mov" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+    </section>
+</main>
+</div>
+</body>
+</html>

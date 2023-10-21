@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            text-align: justify;
+            background-image: url('static/images/j.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #fff;
+            text-align: center; /* Adicionado para centralizar o conteúdo */
+        }
+
+        header h1 {
+            font-size: 60px;
+        }
+
+        nav {
+            background-color: #555;
+            color: #ffffff;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            text-align: justify;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+            text-align: justify;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            text-align: justify;
+        }
+
+        main {
+            padding: 50px;
+            text-align: justify;
+        }
+
+        section {
+            margin-bottom: 50px;
+            font-size: 90px;
+            text-align: center;
+            text-align: justify;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: justify;
+        }
+
+        H3 {
+            font-size: 60px;
+            padding: 10px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .button-container {
+            display: flex; /* Alteração para flexbox */
+            justify-content: center;
+            margin: 10px 0; /* Adicionado espaçamento acima e abaixo dos botões */
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px 30px;
+            margin: 10px; /* Adicionado espaçamento entre os botões */
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <main>
+                <section>
+                    <h3>PRÍNCIPIOS BÁSICOS DO MEDIAPIPE E DO ARDUÍNO, PARA DETECTAR O MOVIMENTO DE UMA MÃO ROBÓTICA.</h3>
+                    <div class="button-container">
+                        <button onclick="irParaMediapipe()">MediaPipe</button>
+                        <button onclick="irParaArduino()">Arduino</button>
+                        <button onclick="irParaMao()">Mão</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+    
+        <script>
+            function irParaMediapipe() {
+            window.location.href = 'mediapipe.html';
+    }
+
+            function irParaArduino() {
+            window.location.href = 'arduino.html';
+    }
+
+            function irParaMao() {
+            window.location.href = 'mao.html';
+    }
+
+        </script>
+</main>
+</body>
+</html>

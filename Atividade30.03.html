@@ -1,0 +1,400 @@
+<script>
+    // programa para aplicação de quiz suporte e manutenção de software
+    var pergunta=true;
+    //*********************************************************************************
+    while(pergunta==true){ //INICIO DO WHILE
+        var resposta = 0;
+        var acertos=0;
+    // PERGUNTA 1
+        resposta=prompt("É a parte física do computador \n"+
+                        "é tudo aquilo que se pode pegar como \n"+
+                        "teclado, monitor, processador etc. \n"+
+                        "Estamos falando do... \n"+
+                        "1 - Software\n"+
+                        "2 - Hardware\n"+
+                        "3 - Componentes de entrada\n"+
+                        "4 - Componentes de saída","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 2 - resposta certa acrescente 1 a acertos
+        else if (resposta==2){
+            acertos++;
+        }
+    // PERGUNTA 2
+        resposta=prompt("Para que o computador seja funcional é preciso que os dois estejam funcionando: hardware básico com um sistema operacional (software básico) instalado. Um sem o outro não tem serventia.\n"+
+                        "1 - Verdadeiro\n"+
+                        "2 - Falso","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>2) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 1 - resposta certa acrescente 1 a acertos
+        else if (resposta==1){
+            acertos++;
+        }
+    // PERGUNTA 3
+        resposta=prompt("É a parte lógica do computador é tudo aquilo que você realmente usa. Os programas, jogos e sistemas operacionais que estão instalados na máquina fazem parte do...\n"+
+                        "1 - Hardware\n"+
+                        "2 - Sistema Operacional\n"+
+                        "3 - Componentes de entrada\n"+
+                        "4 - Software","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 4 - resposta certa acrescente 1 a acertos
+        else if (resposta==4){
+            acertos++;
+        }
+    // PERGUNTA 4
+    resposta=prompt("Os dispositivos de E/S (Entrada e Saída) servem basicamente para a comunicação do computador com o meio externo. Eles proveem o modo pelo qual as informações são transferidas de fora para dentro da máquina, e vice-versa, além de compatibilizar esta transferência através do equilíbrio de velocidade entre os meios diferentes.\n"+
+                        "1 - Verdadeiro\n"+
+                        "2 - Falso","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>2) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 1 - resposta certa acrescente 1 a acertos
+        else if (resposta==1){
+            acertos++;
+        }
+    // PERGUNTA 5
+    resposta=prompt("Como exemplo de dispositivo de entrada podemos citar\n"+
+                        "1 - Monitor\n"+
+                        "2 - Impressora\n"+
+                        "3 - Microfone\n"+
+                        "4 - Pendrive","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 3 - resposta certa acrescente 1 a acertos
+        else if (resposta==3){
+            acertos++;
+        }
+    // PERGUNTA 6
+    resposta=prompt("Complete com a questão abaixo:\nMuitas vezes a corrente elétrica precisa escapar do aparelho elétrico quando surge algum defeito, ou também para liberar a __________________ captada do ambiente.\n"+
+                        "1 - Carga eletromagnética\n"+
+                        "2 - Energia elétrica\n"+
+                        "3 - Energia estática\n"+
+                        "4 - Corrente elétrica","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 3 - resposta certa acrescente 1 a acertos
+        else if (resposta==3){
+            acertos++;
+        }
+    // PERGUNTA 7
+    resposta=prompt("Para prevenir que a energia estática acumulada pelo nosso corpo danifique o equipamento quando nós o manuseamos durante a manutenção, deve-se usar...\n"+
+                        "1 - Mantas ou capacetes antiestáticos\n"+
+                        "2 - Luvas ou botas antiestáticos\n"+
+                        "3 - Pulseiras ou calças antiestáticas\n"+
+                        "4 - Luvas ou pulseiras antiestáticas","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 4 - resposta certa acrescente 1 a acertos
+        else if (resposta==4){
+            acertos++;
+        }
+    // PERGUNTA 8
+    resposta=prompt("Quais os principais componentes de um computador ?\n"+
+                        "1 - Placa mãe, processador, HD, memória e cooler\n"+
+                        "2 - Placa Mãe, processador, HD, Memória e Disquete\n"+
+                        "3 - Processador, Placa Mãe, HD, memória e Placa de Vídeo\n"+
+                        "4 - Processador, Placa Mãe, HD, Memória e Fonte","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 4 - resposta certa acrescente 1 a acertos
+        else if (resposta==4){
+            acertos++;
+        }
+    // PERGUNTA 9
+    resposta=prompt("Qual o tipo de conexão utilizada para um pen drive?\n"+
+                        "1 - PS2\n"+
+                        "2 - Serial\n"+
+                        "3 - Paralela\n"+
+                        "4 - USB","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 4 - resposta certa acrescente 1 a acertos
+        else if (resposta==4){
+            acertos++;
+        }
+    // PERGUNTA 10
+    resposta=prompt("Paulo está utilizando um microcomputador com a configuração a seguir.\n"+
+    "Intel Core Duo – 1,73 GHz\n"+
+    "80 GB HD\n"+
+    "1 GB DDR2\n"+
+    "Com base na configuração apresentada, é correto afirmar que:\n"+
+                        "1 - O disco rígido é de 80 GB.\n"+
+                        "2 - A capacidade da memória RAM é de 1,73 GHz.\n"+
+                        "3 - O monitor de vídeo é de 1 GB.\n"+
+                        "4 - Intel Core Duo indica que existem dois pentes de memória RAM","");
+    
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 1 - resposta certa acrescente 1 a acertos
+        else if (resposta==1){
+            acertos++;
+        }
+    // PERGUNTA 11
+    resposta=prompt("É um exemplo de manutenção preventiva\n"+
+                        "1 - Backups dos arquivos armazenados\n"+
+                        "2 - Aumento o quantidade de memória RAM\n"+
+                        "3 - Comprar um HD com mais espaço\n"+
+                        "4 - Substituir o processador quando ocorrer travamento","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 1 - resposta certa acrescente 1 a acertos
+        else if (resposta==1){
+            acertos++;
+        }
+    // PERGUNTA 12
+    resposta=prompt(" A primeira geração dos computadores tinha como característica o uso de transistores\n"+
+                        "1 - Verdadeiro\n"+
+                        "2 - Falso","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>2) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 2 - resposta certa acrescente 1 a acertos
+        else if (resposta==2){
+            acertos++;
+        }
+    // PERGUNTA 13
+    resposta=prompt("O ENIAC é um computador da :\n"+
+                        "1 - Segunda Geração\n"+
+                        "2 - Terceira Geração\n"+
+                        "3 - Primeira Geração\n"+
+                        "4 - Quarta Geração","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 3 - resposta certa acrescente 1 a acertos
+        else if (resposta==3){
+            acertos++;
+        }
+    // PERGUNTA 15
+    resposta=prompt("Quanto vale 1 Megabyte (MB)\n"+
+                        "1 - 1024 kilobytes\n"+
+                        "2 - 64 kilobytes\n"+
+                        "3 - 128 kilobytes\n"+
+                        "4 - 1028 kilobytes","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 1 - resposta certa acrescente 1 a acertos
+        else if (resposta==1){
+            acertos++;
+        }
+    // PERGUNTA 16
+    resposta=prompt("“O estabilizador é um equipamento utilizado para proteger os aparelhos eletrônicos das oscilações de tensão recebidas da rede elétrica. No caso de alteração de tensão, o estabilizador queima o seu ___________________, protegendo todos aparelhos conectados a ele.” Assinale a alternativa que completa corretamente a afirmativa anterior.\n"+
+                        "1 - Reator\n"+
+                        "2 - Fusível\n"+
+                        "3 - Seletor\n"+
+                        "4 - Cartão de memória","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 2 - resposta certa acrescente 1 a acertos
+        else if (resposta==2){
+            acertos++;
+        }
+    // PERGUNTA 17
+    resposta=prompt("Uma impressora a laser é um...\n"+
+                        "1 - Dispositivo de entrada\n"+
+                        "2 - Dispositivo de saída\n"+
+                        "3 - Banco de dados\n"+
+                        "4 - Bloco de nota","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 2 - resposta certa acrescente 1 a acertos
+        else if (resposta==2){
+            acertos++;
+        }
+    // PERGUNTA 18
+    resposta=prompt("“Um usuário levou o monitor do seu computador em uma loja de manutenção, alegando que o mesmo não estava mais funcionando. Após análise, a empresa diagnosticou que o tubo de imagem do dispositivo estava danificado.” Considerando que o equipamento em questão é de grande dimensão, pesado e obsoleto, é correto afirmar que se trata de um monitor do tipo\n"+
+                        "1 - LED\n"+
+                        "2 - PLASMA\n"+
+                        "3 - LCD\n"+
+                        "4 - CRT","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 4 - resposta certa acrescente 1 a acertos
+        else if (resposta==4){
+            acertos++;
+        }
+    // PERGUNTA 19
+    resposta=prompt("“Uma loja de manutenção recebeu um computador que não estava ligando. Após uma análise, foi detectado que o único pente de memória existente no equipamento estava danificado, sendo necessária a sua troca para que o equipamento funcionasse corretamente.” É correto afirmar que será necessário realizar uma manutenção\n"+
+                        "1 - Corretiva\n"+
+                        "2 - Mecânica\n"+
+                        "3 - Operacional\n"+
+                        "4 - Emergencial","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 1 - resposta certa acrescente 1 a acertos
+        else if (resposta==1){
+            acertos++;
+        }
+    // PERGUNTA 20
+    resposta=prompt("É um tipo de memória volátil que dá suporte ao processador na execução das tarefas:\n"+
+                        "1 - RAM\n"+
+                        "2 - ROM\n"+
+                        "3 - EDO\n"+
+                        "4 - CMOS","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 1 - resposta certa acrescente 1 a acertos
+        else if (resposta==1){
+            acertos++;
+        }
+    // PERGUNTA 21
+    resposta=prompt("São nomes válidos de modelos de processadores do fabricante Intel, EXCETO:\n"+
+                        "1 - Pentium IV.\n"+
+                        "2 - Celeron D\n"+
+                        "3 - Core 2 Duo\n"+
+                        "4 - Semprom.","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 4 - resposta certa acrescente 1 a acertos
+        else if (resposta==4){
+            acertos++;
+        }
+    // PERGUNTA 22
+    resposta=prompt("A placa de circuito de um micro onde ficam localizados o processador e a memória RAM, principalmente, é a placa\n"+
+                        "1 - serial\n"+
+                        "2 - paralela\n"+
+                        "3 - de vídeo\n"+
+                        "4 - mãe","");
+        // validar se o usuário não digitou nenhum valor na resposta
+        //Validar se foi digitado um valor que não seja número
+        //IsNaN - Is not a Number (é ou não é um número)
+        //validar se a opção digitada está no intervalo de valores possíveis
+        if ((resposta=="") || (isNaN(resposta)==true) || (resposta<1 || resposta>4) )
+        {
+            alert("Opção Inválida")
+        }
+        //se a resposta escolhida for 4 - resposta certa acrescente 1 a acertos
+        else if (resposta==4){
+            acertos++;
+        }
+    
+    //*********************************************************************************
+        pergunta=confirm("Deseja refazer o teste?");
+    }// FIM DO WHILE
+    //*********************************************************************************
+    if (acertos > 9) {
+        alert("Aprovado")
+    }
+    else{
+        alert("Reprovado")
+    }
+    
+    </script>

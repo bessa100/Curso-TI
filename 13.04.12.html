@@ -1,0 +1,78 @@
+<script>
+    /* Desenvolver um algoritmo que leia um número não determinado de valores e calcule 
+    e escreva a média aritmética dos valores lidos, a quantidade de valores positivos, 
+    a quantidade de valores negativos e o percentual de valores negativos e positivos.
+    */
+    
+    var valorDigitado = 0;
+    var somatorioValorDigitado = 0;
+    var mediaValorDigitado = 0;
+    var qtdeVrPositivos = 0;
+    var qtdeVrNegativos = 0;
+    var percVrNegativos = 0;
+    var percVrPositivos = 0;
+    // Variavel que conta quantos numeros foram digitados
+    var qtde = 0;
+    // Variavel para controlar a quantidade de repetições do FOR
+    var controle = 1;
+    
+    while (true) {
+        valorDigitado = prompt("Digite um valor: " + '\n' + "Digite FIM para encerrar");
+    
+        if ( valorDigitado == "FIM" ) {
+            break;
+        }
+    
+        // Converte a variavel para o tipo numerico
+        valorDigitado = parseInt(valorDigitado);
+    
+        // Acumula quantas vezes foi digitado um valor
+        qtde++;
+    
+        // Acumula os valores digitados para depois calcular a média
+        somatorioValorDigitado += valorDigitado;
+    
+        // Verifica se o numero é positivo ou negativo
+        if (valorDigitado >= 0) {
+            qtdeVrPositivos++
+        } else {
+            qtdeVrNegativos++
+        }    
+    }
+    /*
+    for (var i = 1; i <= controle; i++) {
+        valorDigitado = parseInt(prompt("Digite um valor: " + '\n' + "Digite 999 para encerrar"));
+    
+        if ( valorDigitado == 999 ) {
+            controle = 99999
+            break;
+        }
+    
+        // Acumula quantas vezes foi digitado um valor
+        qtde++;
+    
+        // Acumula os valores digitados para depois calcular a média
+        somatorioValorDigitado += valorDigitado;
+    
+        // Verifica se o numero é positivo ou negativo
+        if (valorDigitado >= 0) {
+            qtdeVrPositivos++
+        } else {
+            qtdeVrNegativos++
+        }
+    }
+    */
+    // Calcula a media dos valores digitados
+    parseFloat(mediaValorDigitado = somatorioValorDigitado / qtde);
+    percVrPositivos = qtdeVrPositivos / qtde;
+    percVrNegativos = qtdeVrNegativos / qtde;
+    
+    // Mostra os resultados na tela
+    document.write("        Quantos numeros digitados: " + qtde + "<br>");
+    document.write("              O total dos valores: " + somatorioValorDigitado + "<br>");
+    document.write("    A media dos valores digitados: " + mediaValorDigitado.toFixed(2) + "<br>");
+    document.write("A quantidade de valores positivos: " + qtdeVrPositivos + "<br>");
+    document.write("A quantidade de valores negativos: " + qtdeVrNegativos + "<br>");
+    document.write("    A media dos valores positivos: " + percVrPositivos.toFixed(2) + "<br>");
+    document.write("    A media dos valores negativos: " + percVrNegativos.toFixed(2));
+    </script>
